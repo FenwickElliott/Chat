@@ -1,8 +1,8 @@
 (function() {
-    function MainCtrl() {
+    function MainCtrl(Room) {
 
     }
     angular
         .module('chat')
-        .controller('MainCtrl', MainCtrl);
+        .controller('MainCtrl', ['Room', MainCtrl]);
 }());
